@@ -230,10 +230,16 @@ export class GameScene extends Phaser.Scene {
         x: getWidth(this) + 200,
         duration: 2000,
         onComplete: () => {
-          this.add.text(getCenterX(this), getCenterY(this), 'Game Over!', {
+          this.add.text(getCenterX(this), getCenterY(this), 'Congrats! You Win!', {
             fontSize: '104px',
             color: '#ffffff'
           }).setOrigin(0.5).setDepth(6);
+          // Subtitle
+            this.add.text(getCenterX(this), getCenterY(this) + 100, 'By Christine Zhao', { 
+              fontSize: '40px', 
+              color: '#ffffff', 
+              align: 'center'
+            }).setOrigin(0.5).setDepth(6);
         }
       });
     });
