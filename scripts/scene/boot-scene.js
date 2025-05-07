@@ -60,7 +60,7 @@ export class BootScene extends Phaser.Scene {
 
   
     for (let i = 2; i <= 4; i++) {
-      this.load.image(`cloud-${i}`, `assets/img/cloud-${i}.png`);
+      this.load.image(`cloud-${i}`, `assets/img/c${i-1}.png`);
     }
 
 
@@ -68,7 +68,7 @@ export class BootScene extends Phaser.Scene {
   }
 
   update() {
-    // this.scene.start("MenuScene")
+    
     this.scene.start("GameScene")
 
   }
