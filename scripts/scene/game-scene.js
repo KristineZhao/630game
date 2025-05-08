@@ -20,6 +20,9 @@ export class GameScene extends Phaser.Scene {
     this.createUI();
     this.addCollisions();
     this.setupInput();
+    this.bgMusic = this.sound.add('bg_music');
+        this.bgMusic.loop = true;
+        this.bgMusic.play();
   }
 
   update() {
