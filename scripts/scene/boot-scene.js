@@ -8,7 +8,7 @@ export class BootScene extends Phaser.Scene {
 
   preload() {
 
-    
+    this.load.audio('bg_music', 'assets/sound/music.ogg');
     this.load.spritesheet("player", "assets/img/player.png", {
       frameWidth: 64,
       frameHeight: 40,
